@@ -1,0 +1,77 @@
+/*styles sheet*/
+ul.a{
+	list-style-type: circle;
+	list-style-position: outside;
+	background-color: #FF9999;
+	padding: 20px;
+}
+.a li{
+	background-color: #ffe5e5;
+	margin-left: 35px;
+	padding: 5px;
+	margin-top: 5px;
+}
+.rose{
+	width: 110px;
+	/*display: none;*/
+	opacity: .4;
+	transition: all 1s;
+}
+.sunflower{
+	width: 150px;
+	/*visibility: hidden;*/
+	opacity: .4;
+	transition: all 1s;
+}
+.rose:hover, .sunflower:hover {
+	opacity: 1;
+	transition: all 4s;
+}
+.a li:nth-child(even) {
+	color: blue;
+	font-weight: bold;
+}
+.a li:nth-child(odd) {
+	color: red;
+	font-weight: bold;
+}
+.description::first-line{
+	color: red;
+	font-weight: bold;
+}
+.description::first-letter{
+	color: #ff000;
+	font-size: xx-large;
+}
+.description::selection{
+	background-color: gray;
+	color: navajowhite;
+}
+.parent{
+	border: 4px solid green;
+	width: 600px;
+	height: 300px;
+	position: relative;
+}
+.child{
+	border: 4px solid red;
+	width: 120px;
+	height: 100px;
+	position: absolute;
+	/*right: 0px;*/
+	/*left: 0px;*/
+	/*bottom: 0px;*/
+	/*top: 0px;*/
+
+	left: calc(50% - 60px);
+	top: calc(50% - 50px);
+}
+.fixed{
+	border: 4px solid red;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
